@@ -1,90 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Your Order</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Complete Your Purchase - Vivid</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
             font-family: Arial, sans-serif;
+            background: #f9fafb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            max-width: 400px;
             text-align: center;
         }
-
-        .container {
-            max-width: 450px;
-            margin: 60px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-        }
-
         h1 {
-            margin-bottom: 10px;
-            font-size: 26px;
+            margin-bottom: 1rem;
+            color: #4f46e5; /* Tailwind indigo-600 */
         }
-
-        p {
-            color: #555;
-        }
-
-        .price {
-            font-size: 32px;
+        p.price {
+            font-size: 2rem;
             font-weight: bold;
-            margin: 20px 0;
+            margin: 1rem 0 2rem;
+            color: #1e40af; /* Tailwind indigo-900 */
         }
-
-        .btn-pay {
-            background: #28a745;
-            color: white;
-            padding: 15px;
-            width: 80%;
-            font-size: 18px;
-            font-weight: bold;
+        button {
+            background-color: #4f46e5;
             border: none;
-            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
             cursor: pointer;
-            transition: 0.2s;
+            transition: background-color 0.3s ease;
         }
-
-        .btn-pay:hover {
-            background: #218838;
+        button:hover {
+            background-color: #4338ca;
         }
-
         .note {
-            font-size: 14px;
-            margin-top: 15px;
-            color: #999;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #6b7280; /* Tailwind gray-500 */
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Finalize Your Purchase</h1>
-        <p>You are about to order:</p>
-
-        <div class="price">🔥 Offer: 80 TND</div>
-
-        <!-- Payment button (currently placeholder) -->
-        <button class="btn-pay" onclick="fakePay()">
-            Pay Now
-        </button>
-
-        <p class="note">No real payment is processed — demo page only.</p>
-    </div>
-
-    <script>
-        function fakePay() {
-            alert("Thank you! Your payment was simulated successfully.");
-            // Redirect to a Thank You page if you want:
-            // window.location.href = "thankyou.html";
-        }
-    </script>
-
-</body>
-</html>
+        <p>You're ordering the <strong>Vivid Device</strong></p>
+        <p class="price">80 TND</p>
+        <button onclick="ale
