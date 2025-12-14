@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivid - Feel the World Around You</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Vivid - Intelligent Crutch for the Blind</title>
+<link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              primary: '#6366f1',
-              secondary: '#8b5cf6',
+              primary: '#3b82f6',  // Blue
+              secondary: '#10b981', // Emerald
+              accent: '#f59e0b'    // Amber
             }
           }
         }
@@ -24,169 +23,164 @@
 </head>
 <body class="bg-gray-50">
     <custom-navbar></custom-navbar>
-
+    
     <main class="container mx-auto px-4 py-8">
-
+        <!-- Hero Section -->
         <section class="flex flex-col md:flex-row items-center gap-12 py-12">
             <div class="md:w-1/2">
                 <h1 class="text-5xl font-bold text-gray-900 mb-6">
-                    Feel Your Surroundings <span class="text-primary">Confidently</span>
+                    Move with <span class="text-primary">Independence</span>
                 </h1>
                 <p class="text-xl text-gray-600 mb-8">
-                    Vivid is an innovative intellegent crutch that vibrates when objects are within 10 meters,
-                    giving blind individuals greater spatial awareness and independence.
+                    Vivid is an intelligent crutch designed specifically for blind individuals, detecting obstacles and providing haptic feedback for safer mobility.
                 </p>
-
-                <div class="flex flex-col sm:flex-row gap-4">
+<div class="flex flex-col sm:flex-row gap-4">
                     <a href="#order" class="bg-primary hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
-                        Order Now - 80 TND
-                    </a>
+                        Get SmartStride - 350 TND
+</a>
                     <a href="#how-it-works" class="border-2 border-primary text-primary font-bold py-3 px-6 rounded-lg transition duration-300 hover:bg-primary-50 text-center">
-                        How It Works
+                        See How It Works
                     </a>
                 </div>
             </div>
-
             <div class="md:w-1/2">
-                <img src="http://static.photos/technology/640x360/42" alt="Vivid Device" class="rounded-xl shadow-xl w-full">
-            </div>
+                    <img src="https://huggingface.co/spaces/ysf12345/smartstride-the-intelligent-crutch-companion/resolve/main/images/WhatsApp Image 2025-12-14 at 14.24.42.jpeg" alt="Vivid Crutch" class="rounded-xl shadow-xl w-full">
+</div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-12 bg-white rounded-xl shadow-sm px-6 my-8">
-            <h2 class="text-3xl font-bold text-center mb-12">
-                Why Choose <span class="text-primary">Vivid</span>
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg">
+            <h2 class="text-3xl font-bold text-center mb-12">Vivid <span class="text-primary">Features</span></h2>
+<div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition duration-300">
                     <div class="text-primary mb-4">
-                        <i data-feather="alert-circle" class="w-10 h-10"></i>
+                        <i data-feather="alert-triangle" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Proximity Awareness</h3>
-                    <p class="text-gray-600">Vibrates when objects are within 10 meters.</p>
+                    <h3 class="text-xl font-bold mb-2">Obstacle Detection</h3>
+                    <p class="text-gray-600">Detects objects within 2 meters using ultrasonic sensors.</p>
                 </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg">
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition duration-300">
                     <div class="text-primary mb-4">
-                        <i data-feather="clock" class="w-10 h-10"></i>
+                        <i data-feather="vibrate" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Haptic Feedback</h3>
+                    <p class="text-gray-600">Adjustable vibration alerts for different proximity levels.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i data-feather="battery" class="w-10 h-10"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Long Battery Life</h3>
-                    <p class="text-gray-600">Up to 72 hours of continuous use.</p>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="text-primary mb-4">
-                        <i data-feather="droplet" class="w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Water Resistant</h3>
-                    <p class="text-gray-600">IP67 water resistance.</p>
+                    <p class="text-gray-600">Up to 1 week of use on a single charge.</p>
                 </div>
             </div>
         </section>
 
+        <!-- How It Works Section -->
         <section id="how-it-works" class="py-12 my-8">
-            <h2 class="text-3xl font-bold text-center mb-12">
-                How <span class="text-primary">Vivid</span> Works
-            </h2>
-
-            <div class="flex flex-col md:flex-row gap-8 items-center">
+            <h2 class="text-3xl font-bold text-center mb-12">How <span class="text-primary">Vivid</span> Works</h2>
+<div class="flex flex-col md:flex-row gap-8 items-center">
                 <div class="md:w-1/2 order-2 md:order-1">
                     <ol class="space-y-8">
                         <li class="flex items-start gap-4">
                             <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</div>
                             <div>
-                                <h3 class="font-bold text-lg">Wear the Device</h3>
-                                <p class="text-gray-600">Clip the device to your clothing or wrist.</p>
+                                <h3 class="font-bold text-lg">Constant Scanning</h3>
+                                <p class="text-gray-600">The crutch continuously scans for obstacles within 2 meters.</p>
                             </div>
                         </li>
-
                         <li class="flex items-start gap-4">
                             <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</div>
                             <div>
-                                <h3 class="font-bold text-lg">Detection</h3>
-                                <p class="text-gray-600">Scans for objects within 10 meters.</p>
+                                <h3 class="font-bold text-lg">Intelligent Feedback</h3>
+                                <p class="text-gray-600">Vibration intensity increases as you get closer to obstacles.</p>
                             </div>
                         </li>
-
                         <li class="flex items-start gap-4">
                             <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</div>
                             <div>
-                                <h3 class="font-bold text-lg">Vibration Alert</h3>
-                                <p class="text-gray-600">The device vibrates when something is near.</p>
+                                <h3 class="font-bold text-lg">Natural Navigation</h3>
+                                <p class="text-gray-600">Helps you develop spatial awareness naturally while walking.</p>
                             </div>
                         </li>
                     </ol>
                 </div>
-
                 <div class="md:w-1/2 order-1 md:order-2">
-                    <img src="http://static.photos/technology/640x360/10" alt="How it works" class="rounded-xl shadow-lg w-full">
+                    <img src="http://static.photos/medical/640x360/15" alt="How it works" class="rounded-xl shadow-lg w-full">
                 </div>
             </div>
         </section>
-
+<!-- Order Section -->
         <section id="order" class="py-12 bg-gradient-to-r from-primary to-secondary rounded-xl my-8">
             <div class="text-center text-white max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold mb-4">
-                    Get Your <span class="text-yellow-200">Vivid</span> Today
-                </h2>
-
-                <p class="text-xl mb-8">Empower yourself or someone you love.</p>
-
+                <h2 class="text-3xl font-bold mb-4">Order Your <span class="text-yellow-200">SmartStride</span> Today</h2>
+                <p class="text-xl mb-8">Experience safer mobility with our intelligent crutch.</p>
                 <div class="bg-white rounded-lg shadow-xl p-8 max-w-md mx-auto text-gray-800">
-                    <h3 class="text-2xl font-bold mb-4">Vivid Device</h3>
-                    <p class="text-4xl font-bold text-primary mb-6">80 TND</p>
-
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> 10m detection</li>
+                <h3 class="text-2xl font-bold mb-4">Vivid Pro</h3>
+<p class="text-4xl font-bold text-primary mb-6">350 TND</p>
+<ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Designed specifically for the blind</li>
+<li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Obstacle detection</li>
                         <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Adjustable vibration</li>
-                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Lightweight</li>
-                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Includes charger</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Ergonomic design</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> USB-C charging</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="text-green-500"></i> Lightweight aluminum</li>
                     </ul>
-
                     <a href="pay.html" class="bg-primary hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full block text-center">
-    Order Now
-</a>
+                        Order Now
+                    </a>
                 </div>
             </div>
         </section>
-
-        <section class="py-12 my-8">
-            <h2 class="text-3xl font-bold text-center mb-12">
-                Meet the <span class="text-primary">Creators</span>
-            </h2>
-
+        <!-- Meet the Creators Section -->
+        <section class="py-12 my-8 bg-white rounded-xl shadow-sm px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Meet the <span class="text-primary">Creators</span></h2>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-
-                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
-                    <div>
-                        <h3 class="font-bold text-xl">Youssef Bedhiaf</h3>
-                        <p class="text-gray-600 mb-2">Co-creator</p>
-                        <p class="text-gray-700">Student passionate about assistive tech.</p>
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <img src="https://huggingface.co/spaces/ysf12345/smartstride-the-intelligent-crutch-companion/resolve/main/images/IMG_20251125_183719_589.webp" alt="Youssef Bedhiaf" class="w-32 h-32 rounded-full object-cover">
+<div>
+                        <h3 class="text-xl font-bold">Youssef Bedhiaf</h3>
+                        <p class="text-gray-600 mt-2">Student passionate about assistive technology and creating solutions that improve accessibility for all.</p>
                     </div>
                 </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
-                    <div>
-                        <h3 class="font-bold text-xl">Yassine Abdelkafi</h3>
-                        <p class="text-gray-600 mb-2">Co-creator</p>
-                        <p class="text-gray-700">Dedicated to creating accessible solutions.</p>
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <img src="https://huggingface.co/spaces/ysf12345/smartstride-the-intelligent-crutch-companion/resolve/main/images/Screenshot_20251212_225413.png" alt="Yassine Abdelkafi" class="w-32 h-32 rounded-full object-cover">
+<div>
+                        <h3 class="text-xl font-bold">Yassine Abdelkafi</h3>
+                        <p class="text-gray-600 mt-2">Dedicated to creating accessible solutions that empower individuals with mobility challenges.</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section class="py-12 my-8 max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12">Frequently Asked <span class="text-primary">Questions</span></h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg mb-2">How does the obstacle detection work?</h3>
+                    <p class="text-gray-600">SmartStride uses ultrasonic sensors to detect objects within a 2-meter radius, providing haptic feedback through vibration patterns.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg mb-2">Is the crutch adjustable?</h3>
+                    <p class="text-gray-600">Yes, SmartStride comes with height adjustment options to fit users between 5'0" and 6'4".</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg mb-2">How long does the battery last?</h3>
+                    <p class="text-gray-600">With typical use, the battery lasts approximately 7 days. It charges fully in about 2 hours via USB-C.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <custom-footer></custom-footer>
-
+    
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
     <script src="script.js"></script>
-
     <script>
         feather.replace();
     </script>
-
+script>
 </body>
 </html>
